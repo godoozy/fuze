@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Video Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { margin-bottom: 10px; }
+    .video-container {
+      margin: 30px auto;
+      max-width: 640px;
+    }
+    video, iframe {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background: #3D95CE; /* Venmo blue */
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .button:hover {
+      background: #337ab7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Video Site 🎬</h1>
+  <p>Short previews and links to full videos.</p>
+
+  <!-- Short hosted video -->
+  <div class="video-container">
+    <h2>Short Preview</h2>
+    <video controls>
+      <source src="videos/sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- YouTube embed -->
+  <div class="video-container">
+    <h2>Full Video on YouTube</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/VIDEO_ID" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Venmo button -->
+  <div>
+    <a class="button" href="https://venmo.com/YOUR-USERNAME" target="_blank">
+      💸 Support on Venmo
+    </a>
+  </div>
+</body>
+</html>
